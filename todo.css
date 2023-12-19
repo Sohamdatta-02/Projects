@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bgimg img{
+    height: 800px;
+    width: 100%;
+    opacity: .4;
+}
+.heading{
+    width: 100%;
+    position: absolute;
+    color:#6f4d03;
+    text-align: center;
+    top: 0;
+    left: 0;
+    font-size: 25px;
+    background-color:#EAC696;
+}
+#img{
+    position: absolute;
+    top: 4%;
+    height: 55px;
+    width: 65px;
+    margin-left: 10px;
+}
+.inp{
+    margin-left: 79%;
+    position: absolute;
+    top: 12%;
+    text-align: center;
+
+}
+#txtbox{
+    background-color:#EAC696;
+    color:black;
+    height: 605px;
+    width: 300px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 4px 4px 15px;
+    position: relative;
+    right: 4px;
+}
+#btn{
+    position: absolute;
+    bottom: 0%;
+    right:0%;
+    width: 306Px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: orange;
+    font-size: large;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#btn:hover{
+    color: azure;
+    cursor: pointer;
+    }
+#vl{
+    position:absolute;
+    right: 23%;
+    top: 12%;
+    height: 609px;
+    width: 8px;
+    background-color:burlywood;
+    box-shadow:8px 0px 12px 0;
+    border-radius: 30px;
+    font-weight:200;
+    
+}
+.ul{
+   position: absolute;
+   top: 12%;
+   left: 3%;
+   color:black;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-weight:600;
+   text-shadow: 3px 3px white;
+}
+ul li{
+    list-style: none ;
+    font-size: 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    user-select: none;
+    padding: 12px 10px 12px 50px;
+    position: relative;
+    text-transform:uppercase;
+    
+}
+ul li::before{
+    content: ' ';
+    position: absolute;
+    height: 35px;
+    width:  35px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 15px;
+    left: 0px;
+}
+ul li.checked{
+    text-decoration:line-through ;
+}
+ul li.checked::before{
+    
+    background-image: url(checked.jpeg);
+}
+ul li span{
+    position:absolute;
+    left: 120%;
+    top: 13px;
+    width: 40px;
+    height: 40px;
+    font-size: 50px;
+    line-height: 35px;
+    text-align: center;
+    padding: 5px 15px 5px 5px;
+}
+ul li span:hover{
+background-color: gray;
+}
+
+@media  (max-width:1600) and (min-width:600) {
+    .heading{
+        width: 100%;
+        position: absolute;
+        color:#5C5470;
+        text-align: center;
+        top: 0;
+        left: 0%;
+        font-size: x-large;
+        background-color:#EAC696;
+    }
+    #img{
+        position: absolute;
+        top: 4%;
+        height: 55px;
+        width: 65px;
+        margin-left: 10px;
+    }
+    .inp{
+        margin-left: 79%;
+        position: absolute;
+        top: 34%;
+        text-align: center;
+    
+    }
+    #txtbox{
+        background-color:#EAC696;
+        color:black;
+        height: 450px;
+        width: 300px;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 4px 4px 15px;
+        position: relative;
+        right: 4px;
+    }
+    #btn{
+        position: absolute;
+        bottom: 0%;
+        right:0%;
+        width: 306Px;
+        height: 50px;
+        border-radius: 12px;
+        background-color: orange;
+        font-size: large;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    #btn:hover{
+        color: azure;
+        cursor: pointer;
+        }
+    #vl{
+        position:absolute;
+        right: 23%;
+        top: 35.3%;
+        height: 450px;
+        width: 8px;
+        background-color:burlywood;
+        box-shadow:8px 0px 12px 0;
+        border-radius: 30px;
+        font-weight:200;
+    }
+    .ul{
+       position: absolute;
+       top: 35%;
+       left: 3%;
+       color:#5C5470;
+       font-family: 'Bebas Neue', sans-serif;
+       font-weight:600;
+    }
+    ul li{
+        list-style: none ;
+        font-size: 40px;
+        letter-spacing: 3px;
+        cursor: pointer;
+        user-select: none;
+        padding: 12px 10px 12px 50px;
+        position: relative;
+        
+    }
+    ul li::before{
+        content: ' ';
+        position: absolute;
+        height: 35px;
+        width:  35px;
+        border-radius: 50%;
+        background-image: url(unchecked.png);
+        background-size: cover;
+        background-position: center;
+        top: 15px;
+        left: 0px;
+    }
+    ul li.checked{
+        text-decoration:line-through ;
+    }
+    ul li.checked::before{
+        
+        background-image: url(checked.jpeg);
+    }
+    ul li span{
+        position:absolute;
+        left: 120%;
+        top: 18px;
+        width: 40px;
+        height: 40px;
+        font-size: 50px;
+        line-height: 35px;
+        text-align: center;
+        padding: 5px 40px 5px 5px;
+    }
+    
+}
+
+
+@media screen and (max-width:600px) {
+    .bgimg{
+        height: 0px;
+    }
+    .heading{
+        color:#07b0ce;
+        text-align: center;
+        margin-top: 2%;
+        margin-left: 0%;
+        font-size: 20px;
+
+    }
+    #vl{
+        display: none;
+    }
+    .inp{
+        margin-top: -30%;
+        margin-left: 23%;
+        text-align: center;
+    }
+    #btn{
+        position: absolute;
+        bottom: 0%;
+        right:1%;
+        width: 304Px;
+        height: 50px;
+        border-radius: 12px;
+        background-color: orange;
+        font-size: large;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .ul{
+        position: absolute;
+        top: 77%;
+        left: 33%;
+        font-weight:600;
+        color:#BA704F;
+        font-family: 'Croissant One', cursive;
+        font-size: xx-large;
+     }
+    
+}
+
+
+
+@media screen and (max-width:500px) {
+    .inp{
+        margin-top: -38%;
+        margin-left: 16%;
+        text-align: center;
+    }
+    .ul{
+        position: absolute;
+        top: 70%;
+        left: 25%;
+        font-weight:600;
+        color:#BA704F;
+        font-family:sans-serif;
+        font-size: 50px;
+     }
+ }
